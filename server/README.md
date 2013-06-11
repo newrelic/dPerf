@@ -8,14 +8,12 @@ This is an experimental tool and should be treated as such.
 
 # Running the dPerf client 
 
-Copy the contents of the Classes/Profiler directory into your application.
+Simply copy Profiler.h and Profiler.m into your application.
 
 Add the following to your AppDelegate, or wherever you would like to start
 the Profiler. Substitute parameter values that make sense for your profiling needs:
 
-    [DProfiler profileToServer:@"http://your.ip:9123" withSampleRate:50.0 andDuration:65 andTestName:@"your test" ];
-
-Finally, add the Security.framework to your project. dPerf uses this framework to generate random numbers.
+    [Profiler profileToServer:@"http://localhost:9123" withSampleRate:50.0 andDuration:65 andTestName:@"your test" ];
 
 # Running the dPerf server
 
