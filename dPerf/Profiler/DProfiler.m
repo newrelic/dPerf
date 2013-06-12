@@ -125,7 +125,7 @@
     for(int t = 0; t < trials; t++) {
         block();
     }
-    return mach_absolute_time() - start;
+    return (mach_absolute_time() - start) / trials;
 }
 
 // Benchmark the |sample| method.
@@ -145,7 +145,7 @@
     // Clean up our mess.
     [self reset];
     
-    return [self secondsFromInterval:benchInterval] / BENCHMARK_TRIALS;
+    return [self secondsFromInterval:benchInterval];
 }
 
 // Gathers collected samples and metadata, serializes to JSON and sends results
