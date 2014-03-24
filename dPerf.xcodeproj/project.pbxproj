@@ -12,7 +12,6 @@
 		7F6F82B31767936800D33483 /* Requester.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F82AF1767936800D33483 /* Requester.m */; };
 		7F6F82B41767936800D33483 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F82B11767936800D33483 /* ViewController.m */; };
 		7F6F82B71767939800D33483 /* SampleProfiledApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F82B61767939800D33483 /* SampleProfiledApp.m */; };
-		7F6F82C11767947400D33483 /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6F82BE1767945D00D33483 /* NewRelicAgent.framework */; };
 		7F6F82C31767947900D33483 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6F82C21767947900D33483 /* libz.dylib */; };
 		7F6F82C51767947F00D33483 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6F82C41767947F00D33483 /* SystemConfiguration.framework */; };
 		7F6F82C71767948500D33483 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6F82C61767948500D33483 /* CoreTelephony.framework */; };
@@ -29,23 +28,6 @@
 		7F956D4617678F02002B4680 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F956D4417678F02002B4680 /* MainStoryboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7F6F82BD1767945D00D33483 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F6F82B81767945D00D33483 /* NewRelicAgent.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3A5C5A861612369A00F19F1B;
-			remoteInfo = NewRelicAgent;
-		};
-		7F6F82BF1767945D00D33483 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F6F82B81767945D00D33483 /* NewRelicAgent.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3A5C5A9A1612369A00F19F1B;
-			remoteInfo = NewRelicAgentTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		7F6F82A91767935C00D33483 /* DProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DProfiler.h; path = Profiler/DProfiler.h; sourceTree = "<group>"; };
 		7F6F82AA1767935C00D33483 /* DProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DProfiler.m; path = Profiler/DProfiler.m; sourceTree = "<group>"; };
@@ -57,7 +39,6 @@
 		7F6F82B11767936800D33483 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Sample Application/ViewController.m"; sourceTree = "<group>"; };
 		7F6F82B51767939800D33483 /* SampleProfiledApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleProfiledApp.h; path = "Sample Application/SampleProfiledApp.h"; sourceTree = "<group>"; };
 		7F6F82B61767939800D33483 /* SampleProfiledApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleProfiledApp.m; path = "Sample Application/SampleProfiledApp.m"; sourceTree = "<group>"; };
-		7F6F82B81767945D00D33483 /* NewRelicAgent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NewRelicAgent.xcodeproj; path = ../ios_agent/NewRelicAgent.xcodeproj; sourceTree = "<group>"; };
 		7F6F82C21767947900D33483 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		7F6F82C41767947F00D33483 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7F6F82C61767948500D33483 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -86,7 +67,6 @@
 				7F6F82C71767948500D33483 /* CoreTelephony.framework in Frameworks */,
 				7F6F82C51767947F00D33483 /* SystemConfiguration.framework in Frameworks */,
 				7F6F82C31767947900D33483 /* libz.dylib in Frameworks */,
-				7F6F82C11767947400D33483 /* NewRelicAgent.framework in Frameworks */,
 				7F956D2A17678F02002B4680 /* UIKit.framework in Frameworks */,
 				7F956D2C17678F02002B4680 /* Foundation.framework in Frameworks */,
 				7F956D2E17678F02002B4680 /* CoreGraphics.framework in Frameworks */,
@@ -96,23 +76,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F6F82B91767945D00D33483 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7F6F82BE1767945D00D33483 /* NewRelicAgent.framework */,
-				7F6F82C01767945D00D33483 /* NewRelicAgentTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7F956D1D17678F02002B4680 = {
 			isa = PBXGroup;
 			children = (
-				7F6F82C8176794C000D33483 /* Security.framework */,
-				7F6F82C61767948500D33483 /* CoreTelephony.framework */,
-				7F6F82C41767947F00D33483 /* SystemConfiguration.framework */,
-				7F6F82C21767947900D33483 /* libz.dylib */,
-				7F6F82B81767945D00D33483 /* NewRelicAgent.xcodeproj */,
 				7F956D2F17678F02002B4680 /* dPerf */,
 				7F956D2817678F02002B4680 /* Frameworks */,
 				7F956D2717678F02002B4680 /* Products */,
@@ -130,6 +96,10 @@
 		7F956D2817678F02002B4680 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F6F82C21767947900D33483 /* libz.dylib */,
+				7F6F82C8176794C000D33483 /* Security.framework */,
+				7F6F82C61767948500D33483 /* CoreTelephony.framework */,
+				7F6F82C41767947F00D33483 /* SystemConfiguration.framework */,
 				7F956D2917678F02002B4680 /* UIKit.framework */,
 				7F956D2B17678F02002B4680 /* Foundation.framework */,
 				7F956D2D17678F02002B4680 /* CoreGraphics.framework */,
@@ -226,35 +196,12 @@
 			mainGroup = 7F956D1D17678F02002B4680;
 			productRefGroup = 7F956D2717678F02002B4680 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7F6F82B91767945D00D33483 /* Products */;
-					ProjectRef = 7F6F82B81767945D00D33483 /* NewRelicAgent.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				7F956D2517678F02002B4680 /* dPerf */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7F6F82BE1767945D00D33483 /* NewRelicAgent.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework.static;
-			path = NewRelicAgent.framework;
-			remoteRef = 7F6F82BD1767945D00D33483 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7F6F82C01767945D00D33483 /* NewRelicAgentTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NewRelicAgentTests.octest;
-			remoteRef = 7F6F82BF1767945D00D33483 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7F956D2417678F02002B4680 /* Resources */ = {

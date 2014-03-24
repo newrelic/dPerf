@@ -25,17 +25,13 @@
 #import "Requester.h"
 #import "SampleProfiledApp.h"
 
-#import <NewRelicAgent/NewRelicAgent.h>
-
 #define SERVER_URL @"http://172.16.1.185:9123"
-
-#define NR_APP_TOKEN @"YOUR NEWRELIC APP TOKEN"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
-    [NewRelicAgent startWithApplicationToken: NR_APP_TOKEN];
+{
+    // TODO: Install New Relic Mobile to monitor your distributed app benchmarks. https://newrelic.com/mobile
     
     [DProfiler profileToServer:SERVER_URL
                withSampleRate:50.0
